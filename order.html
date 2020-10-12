@@ -32,36 +32,51 @@
         </table>
         <h2>Order Form</h2>
         <form>
-            <p>Your name
-            <input type="text" name="name">
+            <p> 
+                <label for="input-name">
+                    Your name
+                </label>
+                <input type="text" name="name" id="input-name">
             </p>
 
-            <p>Who are we sending this to?
-            <input type="text" name="recipient">
+            <p>
+                <label for="input-recipient">
+                    Who are we sending this to?
+                </label>
+                <input type="text" name="recipient" id="input-recipient">
             </p>
             
-            <p>Choose a melon:
+            <p>
+                
+                Choose a melon:
+                
                 <select name="melon">
-                    <option value="watermelon">Watermleon</option>
-                    <option value="canteloupe">Canteloupe</option>
-                    <option value="honeydew">Honeydew</option>
+                    <option value="watermelon" id="watermelon">
+                        <label for="watermelon">Watermleon</label></option>
+                    <option value="canteloupe" id="canteloupe">
+                        <label for="canteloupe">Canteloupe</label></option>
+                    <option value="honeydew" id="honeydew">
+                        <label for="honeydew">Honeydew</label></option>
                 </select>
             </p>
 
             <p>When should we deliver?</p>
-            <input type="radio" name="time" value="am"> Morning
-            <input type="radio" name="time" value="pm"> Evening
-            <input type="radio" name="time" value="any"> Any time
+            <input type="radio" name="time" value="am" id="morning">
+                <label for="morning">Morning</label>
+            <input type="radio" name="time" value="pm" id="evening">
+                <label for="evening">Evening</label>
+            <input type="radio" name="time" value="any" id="any">
+                <label for="any">Any time</label>
 
             <br>
             <br>
-            <label>Enter your message:</label>
+            <label for="message">Enter your message:</label>
             <br>
-            <textarea name="message"></textarea>
+            <textarea name="message" id="message"></textarea>
         
             <p>Subscribe to our newsletter
-                <input type="checkbox" name="subscribe" value="Yes">
-                <label>Yes</label>
+                <input type="checkbox" name="subscribe" value="Yes" id="yes">
+                <label for="yes">Yes</label>
             </p>
 
             <button type="submit">Submit Query</button>
